@@ -29,7 +29,7 @@ Or install it yourself as:
     oauth_config = { consumer_key: ENV['OAUTH_KEY'], consumer_secret: ENV['OAUTH_SECRET'] }
 
     # Usage
-    oauth = Oauth::Helper.new(method, domain_url, user_data, oauth_config)
+    oauth = Oauth1::Helper.new(method, domain_url, user_data, oauth_config)
 
     # Returns
     oauth.signature_base # Returns the signature appended in the auth url
